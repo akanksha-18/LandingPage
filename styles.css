@@ -17,6 +17,7 @@ body {
   width: 100%;
   position: relative;
   font-family: Arial, sans-serif;
+
 }
 
 .top-section {
@@ -36,12 +37,7 @@ body {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(
-    to right,
-    rgba(0, 150, 0, 0.4),
-    rgba(0, 0, 0, 1),
-    rgba(0, 150, 0, 0.4)
-  );
+
 }
 
 .logo {
@@ -89,72 +85,102 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* BUTTONS */
 .auth-buttons {
   display: flex;
-  gap: 8px;
+  gap: 6px !important; 
 }
 
 .btn {
-  padding: 8px 20px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 6px 12px !important;
+  border-radius: 5px;
+  font-size: 13px I !important;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  color: #000 !important; 
 }
 
 .btn-signin {
-  background: #fff;
-  color: #000;
+   background: #fff !important;  
 }
 
 .btn-register {
-  background: #ffd700;
-  color: #000;
+   background: #ffd700 !important; 
+
 }
 
 .btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  opacity: 0.85;
 }
 
+
+
 .navigation {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 150, 0, 0.4) 0%,
-    rgba(0, 0, 0, 1) 30%,
-    rgba(0, 0, 0, 1) 70%,
-    rgba(0, 150, 0, 0.4) 100%
-  );
-  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 8px 0;
+  position: relative;
+  border-top: 1px solid rgba(0, 204, 102, 0.7);
+  border-bottom: 1px solid rgba(0, 204, 102, 0.7);
+  box-shadow: 
+    0 -6px 25px rgba(0, 204, 102, 0.4),
+    0 6px 25px rgba(0, 204, 102, 0.4),  
+    inset 0 2px 4px rgba(0, 204, 102, 0.25), 
+    inset 0 -2px 4px rgba(0, 204, 102, 0.25); 
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+
+.navigation::before,
+.navigation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: radial-gradient(circle, rgba(0, 204, 102, 0.8) 0%, rgba(0, 204, 102, 0) 70%);
+}
+
+.navigation::before {
+  top: -2px;
+}
+
+.navigation::after {
+  bottom: -2px;
 }
 
 .nav-menu {
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 60px;
+  gap: 50px;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-menu li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
   display: block;
-  padding: 10px 15px;
+  padding: 8px 12px;
+  letter-spacing: 0.5px;
 }
 
 .nav-menu li a:hover {
-  color: #ffd700;
+  color: #00cc66;
+  text-shadow: 0 0 10px rgba(0, 204, 102, 0.7),
+               0 0 20px rgba(0, 204, 102, 0.5);
 }
+
 
 /* HERO SECTION */
 .hero {
@@ -170,7 +196,7 @@ body {
   background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("hero1.png");
-  background-size: cover, 100% 90%;
+  background-size: cover, 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   padding: 4rem 2rem 2rem;
@@ -214,8 +240,8 @@ body {
 }
 
 .btn-large {
-  padding: 1.2rem 3rem;
-  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  padding: 1.2rem 3rem !important;
+  font-size: clamp(1.2rem, 3vw, 1.4rem) !important;
   border-radius: 12px;
   font-weight: 700;
   text-decoration: none;
@@ -228,8 +254,8 @@ body {
 }
 
 .btn-secondary {
-  background: #222;
-  color: #ffd000;
+  background: #222 !important;
+  color: #ffd000 !important;
 }
 
 .btn-secondary:hover {
@@ -239,7 +265,7 @@ body {
 
 .btn-primary {
   background: #ffd000;
-  color: #f9f0f0;
+  color: #040404 !important;
 }
 
 .btn-primary:hover {
@@ -540,7 +566,7 @@ body {
   }
 }
 
-/* WHY CHOOSE US / FEATURES SECTION */
+
 .why-choose-us {
   padding: 6rem 2rem;
   background: #fff;
@@ -621,9 +647,9 @@ body {
 .features-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem 2rem; /* More vertical gap to prevent overlap */
+  gap: 3rem 2rem;
   position: relative;
-  padding: 3rem 0; /* More padding for staggered cards */
+  padding: 3rem 0;
 }
 
 .feature-card {
@@ -643,7 +669,6 @@ body {
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
-/* Reduced staggered positioning to prevent overlap */
 .feature-card:nth-child(1) {
   transform: translateY(-15px);
 }
@@ -689,7 +714,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Network/connection style icons */
+
 .icon-network {
   width: 40px;
   height: 40px;
@@ -830,13 +855,13 @@ body {
 
 .why-image img {
   width: 100%;
-  max-width: 650px; /* bigger image */
+  max-width: 650px; 
   height: auto;
   border-radius: 12px;
 }
 
 .why-text h3 {
-  font-size: clamp(2.2rem, 4.5vw, 2.8rem); /* larger heading */
+  font-size: clamp(2.2rem, 4.5vw, 2.8rem); 
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -981,12 +1006,12 @@ body {
   transform: rotate(-1.5deg);
 }
 
-/* Hover straightens and zooms */
+
 .testimonial-card-new:hover {
   transform: rotate(0deg) scale(1.03);
 }
 
-/* Keep main card in center more straight */
+
 .main-card {
   transform: rotate(0deg);
 }
@@ -1002,6 +1027,14 @@ body {
   color: #000;
 }
 
+.casino-section .btn-games{
+  background: #000;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
 .casino-header {
   display: flex;
   justify-content: space-between;
