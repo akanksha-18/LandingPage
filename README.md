@@ -15,4 +15,4 @@ The page is designed to be visually appealing, user-friendly, and works seamless
 - **CSS3** – Styling, layout, and animations
 - **JavaScript (Vanilla)** – Interactive features and DOM manipulation
 
-### Hosted Link :- 
+### Hosted Link :- https://akanksha-18.github.io/LandingPage/
