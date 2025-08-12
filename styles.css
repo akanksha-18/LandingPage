@@ -745,7 +745,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Add connecting lines */
 .icon-network {
   background-image: radial-gradient(
       circle at 16px 8px,
@@ -786,7 +785,6 @@ body {
   font-weight: 400;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 968px) {
   .features-grid {
     grid-template-columns: 1fr;
@@ -886,7 +884,6 @@ body {
   line-height: 1.6;
 }
 
-/* TESTIMONIALS SECTION */
 .testimonials {
   text-align: center;
   padding: 70px 20px;
@@ -1020,7 +1017,7 @@ body {
   transform: rotate(0deg) scale(1.05);
 }
 
-/* CASINO SECTION */
+
 .casino-section {
   padding: 4rem 2rem;
   background: #fff;
@@ -1141,7 +1138,6 @@ body {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Game backgrounds */
 .majestic-safari {
   background-image: url("ss1.png");
 }
@@ -1341,9 +1337,7 @@ body {
   color: #ffd700;
 }
 
-/* RESPONSIVE BREAKPOINTS */
 
-/* Large Tablets and Small Desktops */
 @media (max-width: 1024px) {
   .top-section {
     padding: 15px 30px;
@@ -1388,7 +1382,6 @@ body {
   }
 }
 
-/* Tablets */
 @media (max-width: 768px) {
   .top-section {
     padding: 15px 20px;
@@ -1496,7 +1489,6 @@ body {
   }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
   .top-section {
     padding: 12px 15px;
@@ -1634,7 +1626,6 @@ body {
   }
 }
 
-/* Extra Small Phones */
 @media (max-width: 320px) {
   .top-section {
     padding: 10px 12px;
@@ -1777,7 +1768,7 @@ body {
   }
 }
 
-/* Landscape Mobile Orientation */
+
 @media (max-width: 768px) and (orientation: landscape) {
   .hero {
     min-height: 70vh;
@@ -1806,7 +1797,7 @@ body {
   }
 }
 
-/* Ultra-wide screens */
+
 @media (min-width: 1400px) {
   .top-section {
     padding: 15px 60px;
@@ -1834,7 +1825,7 @@ body {
   }
 }
 
-/* Print Styles */
+
 @media print {
   .header,
   .navigation,
@@ -1871,12 +1862,12 @@ body {
   }
 }
 
-/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Loading animation */
+
 .loading {
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
@@ -1888,7 +1879,7 @@ html {
   }
 }
 
-/* High contrast mode support */
+
 @media (prefers-contrast: high) {
   .hero::before {
     display: none;
@@ -1903,7 +1894,7 @@ html {
   }
 }
 
-/* Reduced motion support */
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -1916,7 +1907,7 @@ html {
   }
 }
 
-/* Focus styles for accessibility */
+
 .btn:focus,
 .carousel-btn:focus,
 .bet-btn:focus,
@@ -1932,13 +1923,12 @@ html {
   color: #ffd700;
 }
 
-/* Ensure images are responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Container max-width for very large screens */
+
 .container {
   max-width: 1600px;
   margin: 0 auto;

@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ------------------ Casino Carousel ------------------ */
+  
     const carousel = document.getElementById("casinoGames");
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
 
     let index = 0;
-    const cardWidth = 220 + 20; // width + gap
+    const cardWidth = 220 + 20; 
     const totalCards = carousel.children.length;
     let visibleCards = 0;
 
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateButtons();
 
 
-    /* ------------------ Testimonials ------------------ */
+   
     const testimonials = [
         { avatar: 'S', name: 'Suresh K', type: 'Daily Player', text: 'The live betting feature is amazing, and customer support is super responsive! Highly recommend FantasyXI.' },
         { avatar: 'R', name: 'Rahul S.', type: 'Verified User', text: 'FantasyXI is the best platform for betting. Instant withdrawals & great user experience! I have been playing for months.' },
