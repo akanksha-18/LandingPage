@@ -417,7 +417,7 @@ body {
   .hero {
     grid-template-columns: 1fr;
     text-align: left;
-    aspect-ratio: 4 / 3;
+aspect-ratio: auto;
     min-height: 400px;
     padding: 2rem 1rem;
   }
@@ -439,18 +439,18 @@ body {
     margin-bottom: 2rem;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
+   .hero-buttons {
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 0.6rem; 
+    justify-content: flex-start;
   }
 
   .btn-large {
-    width: auto !important;
-    min-width: unset !important;
-    max-width: 180px !important;
-    padding: 0.6rem 1rem !important;
-    font-size: 0.85rem !important;
+    flex: 1 1 auto; 
+    max-width: 140px !important; 
+    padding: 0.5rem 0.8rem !important; 
+    font-size: 0.85rem !important; 
     border-radius: 6px !important;
   }
 }
