@@ -1228,7 +1228,11 @@ aspect-ratio: auto;
 .game-card:hover {
   transform: scale(1.05);
 }
-
+@media (max-width: 768px) {
+  .carousel-btn {
+    display: none;
+  }
+}
 .play-btn {
   position: absolute;
   top: 50%;
